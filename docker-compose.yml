@@ -1,0 +1,76 @@
+# ============================================
+# 🦀 CLAW-PHISH v5.0.0 - Docker Compose
+# ============================================
+
+version: '3.8'
+
+services:
+  claw-phish:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: claw-phish
+    restart: unless-stopped
+    hostname: claw-phish
+    ports:
+      - "5000:5000"      # Web Dashboard
+      - "8080:8080"      # Phishing Server
+      - "8000-8010:8000-8010"  # Domain Hosting
+    volumes:
+      - ./data:/app/.claw_phish
+      - ./reports:/app/reports
+      - ./temp:/app/temp
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TZ=UTC
+      - CLAW_ENV=production
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_ADMIN
+    security_opt:
+      - apparmor:unconfined
+    networks:
+      - claw-network
+    stdin_open: true
+    tty: true
+    command: []
+    # Uncomment for auto-start commands:
+    # command: ["-c", "status"]
+
+  # Optional: Redis for session management
+  redis:
+    image: redis:7-alpine
+    container_name: claw-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./redis-data:/data
+    networks:
+      - claw-network
+
+  # Optional: PostgreSQL for advanced data storage
+  postgres:
+    image: postgres:15-alpine
+    container_name: claw-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: claw_phish
+      POSTGRES_USER: claw
+      POSTGRES_PASSWORD: claw_phish_2024
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - claw-network
+
+networks:
+  claw-network:
+    driver: bridge
+
+volumes:
+  data:
+  reports:
+  temp:
