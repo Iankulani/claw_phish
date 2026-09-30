@@ -1,5 +1,7 @@
 # claw_phish
 
+<div align="center">
+  
 [![GitHub stars](https://img.shields.io/github/stars/Iankulani/claw_phish?style=for-the-badge&logo=github)](https://github.com/Iankulani/claw_phish/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Iankulani/claw_phish?style=for-the-badge&logo=github)](https://github.com/Iankulani/claw_phish/network)
 [![GitHub watchers](https://img.shields.io/github/watchers/Iankulani/claw_phish?style=for-the-badge&logo=github)](https://github.com/Iankulani/claw_phish/watchers)
@@ -13,6 +15,8 @@
 [![PowerShell](https://img.shields.io/badge/PowerShell-Supported-blue?style=for-the-badge&logo=powershell&logoColor=white)](https://github.com/Iankulani/claw_phish)
 [![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Phishing%20Education-purple?style=for-the-badge&logo=hackthebox&logoColor=white)](https://github.com/Iankulani/claw_phish)
 
+
+</div>
 
 Claw Phish
 
