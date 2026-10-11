@@ -1,6 +1,10 @@
 # claw_phish
 
+
+
 <div align="center">
+
+<img width="360" height="360" alt="clawfish" src="https://github.com/user-attachments/assets/5626d077-2a3f-47ef-a3d2-7135617e8d68" />
   
 [![GitHub stars](https://img.shields.io/github/stars/Iankulani/claw_phish?style=for-the-badge&logo=github)](https://github.com/Iankulani/claw_phish/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Iankulani/claw_phish?style=for-the-badge&logo=github)](https://github.com/Iankulani/claw_phish/network)
