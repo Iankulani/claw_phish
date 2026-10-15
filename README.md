@@ -19,7 +19,6 @@
 [![PowerShell](https://img.shields.io/badge/PowerShell-Supported-blue?style=for-the-badge&logo=powershell&logoColor=white)](https://github.com/Iankulani/claw_phish)
 [![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Phishing%20Education-purple?style=for-the-badge&logo=hackthebox&logoColor=white)](https://github.com/Iankulani/claw_phish)
 
-
 </div>
 
 Claw Phish is a social engineering security software concept designed to support cybersecurity professionals, security operations teams, penetration testers, and researchers in understanding and defending against social engineering attacks. The platform provides a centralized environment for coordinating security assessments, managing authorized cybersecurity exercises, and improving organizational awareness of phishing and other human-targeted cyber threats.
