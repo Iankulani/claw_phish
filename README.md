@@ -95,3 +95,5 @@ python claw_phish.p
 ```
 
 # Star History
+
+![Star History](https://shieldcn.dev/chart/github/stars/Iankulani/claw_phish.svg?theme=violet)
