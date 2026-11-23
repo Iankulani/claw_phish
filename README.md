@@ -91,7 +91,7 @@ cd claw_phish
 
 ```bash
 
-python claw_phish.p
+python claw_phish.py
 ```
 
 # Star History
